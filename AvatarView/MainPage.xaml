@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:local="clr-namespace:AvatarView"
+             xmlns:avatarView="clr-namespace:Syncfusion.XForms.AvatarView;assembly=Syncfusion.Core.XForms"
+             x:Class="AvatarView.MainPage">
+
+    <ContentPage.BindingContext>
+        <local:AvatarViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <x:String x:Key="avatarImage">Avatar.png</x:String>
+        </ResourceDictionary>
+       
+    </ContentPage.Resources>
+    
+    <Grid>
+        <avatarView:SfAvatarView ContentType="Custom"
+                           ImageSource="{Binding AvatarImage}"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"   
+                           HeightRequest="50"
+                           CornerRadius="25"
+                           WidthRequest="50" />
+    </Grid>
+
+</ContentPage>

@@ -1,34 +1,34 @@
 # how-to-bind-staticresource-to-imagesource-in-xamarin.forms-sfavatarview
 This section explains how to bind StaticResource to ImageSource in Xamarin.Forms SfAvatarView.
 
-# Getting Started With Xamarin AvatarView (SfAvatarView)
+## Getting Started With Xamarin AvatarView (SfAvatarView)
 
-## Adding SfAvatarView reference
+### Adding SfAvatarView reference
 You can add SfAvatarView reference using one of the following methods:
 
-## Method 1: Adding SfAvatarView reference from nuget.org
+#### Method 1: Adding SfAvatarView reference from nuget.org
 
 Syncfusion Xamarin components are available in nuget.org. To add SfAvatarView to your project, open the NuGet package manager in Visual Studio, search for Syncfusion.Xamarin.Core, and then install it.
 
-## Method 2: Adding SfAvatarView reference from toolbox
+#### Method 2: Adding SfAvatarView reference from toolbox
 
 Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfAvatarView control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to Toolbox.
 
-## Method 3: Adding SfAvatarView assemblies manually from the installed location
+#### Method 3: Adding SfAvatarView assemblies manually from the installed location
 
 If you prefer to manually reference the assemblies instead of referencing from NuGet, add the following assemblies in respective projects.
 
-#   Creating an SfAvatarView control
+##   Creating an SfAvatarView control
 The SfAvatarView control is configured entirely in C# or in XAML. The following steps explain how to create an SfAvatarView control and configure its elements.
 
-##  Adding namespace for referred assemblies
+###  Adding namespace for referred assemblies
 
 **[XAML]**
 ```
 xmlns:sfavatar="clr-namespace:Syncfusion.XForms.AvatarView;assembly=Syncfusion.Core.XForms"
 ```
 
-##  Adding the SfAvatarView control as the content of ContentPage
+###  Adding the SfAvatarView control as the content of ContentPage
 You can add a custom image for displaying in SfAvatarView using the ImageSource property.
 
 **[XAML]**
@@ -46,7 +46,7 @@ You can add a custom image for displaying in SfAvatarView using the ImageSource 
 </ContentPage.Content>
 
 ```
-# Bind staticresource to imagesource in SfAvatarView
+## Bind staticresource to imagesource in SfAvatarView
 
 **[XAML]**
 ```
@@ -67,7 +67,7 @@ You can add a custom image for displaying in SfAvatarView using the ImageSource 
                            WidthRequest="50" />
     </Grid>
 ```
-## View Model
+### View Model
 **[C#]**
 
 ```
